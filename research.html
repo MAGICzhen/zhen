@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Academic website of Zhen Chen"
+  >
+
+  <title>Zhen Chen | Research</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button
+    class="menu-button"
+    id="menuButton"
+    type="button"
+    aria-label="Open navigation menu"
+  >
+    ☰
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <img
+        class="profile-photo"
+        src="profile.jpg"
+        alt="Portrait of Zhen Chen"
+      >
+
+      <h1 class="sidebar-name">Zhen Chen</h1>
+
+      <div class="sidebar-rule"></div>
+
+      <p class="sidebar-subtitle">
+        Computational Neuroscience
+      </p>
+
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <ul>
+          <li>
+  <a href="index.html">About</a>
+</li>
+
+<li>
+  <a class="active" href="research.html">Research</a>
+</li>
+
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+        </ul>
+      </nav>
+
+      <div class="profile-links">
+        <a
+          class="icon-link"
+          href="https://scholar.google.com/citations?user=5tLXAaEAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Google Scholar"
+        >
+          <span class="icon-label">Google Scholar</span>
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2 1 8l11 6 9-4.91V17h2V8L12 2zm0
+              14L5 12.18V17l7 4 7-4v-4.82L12 16z"
+            />
+          </svg>
+        </a>
+
+        <a
+          class="icon-link"
+          href="Zhen-Chen-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Curriculum Vitae"
+        >
+          <span class="icon-label">Curriculum Vitae</span>
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M6 2h8l4 4v16H6V2zm7 1.5V7h3.5L13
+              3.5zM8 11h8V9H8v2zm0 4h8v-2H8v2zm0
+              4h6v-2H8v2z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+<main class="page-content">
+  <div class="content-container">
+    <header class="content-header">
+      <h1>Research</h1>
+
+      <p>
+        Computational models of neural dynamics and cognition
+      </p>
+    </header>
+
+    <div class="content-body research-list">
+      <article class="research-item">
+        <h2>Computational Neuroscience</h2>
+
+        <p>
+          I develop computational models to understand neural activity,
+          representation, and information processing in biological
+          systems.
+        </p>
+
+        <div class="research-tags">
+          <span class="tag">Neural computation</span>
+          <span class="tag">Modeling</span>
+          <span class="tag">Neural networks</span>
+        </div>
+      </article>
+
+      <article class="research-item">
+        <h2>Dynamical Systems</h2>
+
+        <p>
+          I use dynamical-systems approaches to investigate how
+          population-level neural dynamics support cognition and
+          flexible behavior.
+        </p>
+
+        <div class="research-tags">
+          <span class="tag">Neural dynamics</span>
+          <span class="tag">Population activity</span>
+          <span class="tag">Mathematical analysis</span>
+        </div>
+      </article>
+
+      <article class="research-item">
+        <h2>Working Memory and Cognition</h2>
+
+        <p>
+          I study the circuit and computational mechanisms that allow
+          neural systems to maintain, transform, and use information
+          during cognitive tasks.
+        </p>
+
+        <div class="research-tags">
+          <span class="tag">Working memory</span>
+          <span class="tag">Cognition</span>
+          <span class="tag">Flexible behavior</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</main>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const sidebar = document.getElementById("sidebar");
+    const mobileOverlay = document.getElementById("mobileOverlay");
+
+    function closeMenu() {
+      sidebar.classList.remove("open");
+      mobileOverlay.classList.remove("visible");
+    }
+
+    menuButton.addEventListener("click", function () {
+      sidebar.classList.toggle("open");
+      mobileOverlay.classList.toggle("visible");
+    });
+
+    mobileOverlay.addEventListener("click", closeMenu);
+  </script>
+</body>
+</html>
