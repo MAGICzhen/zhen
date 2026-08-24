@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Academic website of Zhen Chen"
+  >
+
+  <title>Zhen Chen | About</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button
+    class="menu-button"
+    id="menuButton"
+    type="button"
+    aria-label="Open navigation menu"
+  >
+    ☰
+  </button>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-inner">
+      <img
+        class="profile-photo"
+        src="profile.jpg"
+        alt="Portrait of Zhen Chen"
+      >
+
+      <h1 class="sidebar-name">Zhen Chen</h1>
+
+      <div class="sidebar-rule"></div>
+
+      <p class="sidebar-subtitle">
+        Computational Neuroscience
+      </p>
+
+      <nav class="sidebar-nav" aria-label="Main navigation">
+        <ul>
+          <li>
+            <a class="active" href="index.html">About</a>
+          </li>
+
+          <li>
+            <a href="research.html">Research</a>
+          </li>
+
+          <li>
+            <a href="publications.html">Publications</a>
+          </li>
+
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="profile-links">
+        <a
+          class="icon-link"
+          href="https://scholar.google.com/citations?user=5tLXAaEAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Google Scholar"
+        >
+          <span class="icon-label">Google Scholar</span>
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2 1 8l11 6 9-4.91V17h2V8L12 2zm0
+              14L5 12.18V17l7 4 7-4v-4.82L12 16z"
+            />
+          </svg>
+        </a>
+
+        <a
+          class="icon-link"
+          href="Zhen-Chen-CV.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Curriculum Vitae"
+        >
+          <span class="icon-label">Curriculum Vitae</span>
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M6 2h8l4 4v16H6V2zm7 1.5V7h3.5L13
+              3.5zM8 11h8V9H8v2zm0 4h8v-2H8v2zm0
+              4h6v-2H8v2z"
+            />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <main class="page-content">
+    <div class="content-container">
+      <header class="content-header">
+        <h1>About Me</h1>
+
+        <p>
+          Computational and systems neuroscience at MIT
+        </p>
+      </header>
+
+      <div class="content-body">
+        <p>
+          Hi there! Welcome to my website.
+        </p>
+
+        <p>
+          I am a researcher at the Massachusetts Institute of
+          Technology studying computational and systems neuroscience.
+          My work investigates how neural circuits support cognition,
+          working memory, and flexible behavior.
+        </p>
+
+        <p>
+          I use mathematical analysis, computational modeling,
+          dynamical-systems approaches, and biologically realistic
+          neural-network models to study neural computation.
+        </p>
+
+        <p>
+          My research interests include computational neuroscience,
+          systems neuroscience, dynamical systems, working memory,
+          and cognition.
+        </p>
+
+        <p>
+          Replace these paragraphs with Zhen's complete and accurate
+          biography. You may include education, current position,
+          research background, and long-term research goals.
+        </p>
+
+        <p>
+          See <a href="research.html">Research</a> for current and past
+          projects, and <a href="publications.html">Publications</a>
+          for selected papers.
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const menuButton = document.getElementById("menuButton");
+    const sidebar = document.getElementById("sidebar");
+    const mobileOverlay = document.getElementById("mobileOverlay");
+
+    function closeMenu() {
+      sidebar.classList.remove("open");
+      mobileOverlay.classList.remove("visible");
+    }
+
+    menuButton.addEventListener("click", function () {
+      sidebar.classList.toggle("open");
+      mobileOverlay.classList.toggle("visible");
+    });
+
+    mobileOverlay.addEventListener("click", closeMenu);
+  </script>
+</body>
+</html>
